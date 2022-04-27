@@ -1,0 +1,9 @@
+-- wallet hash
+import Wallet.Emulator.Wallet
+mockWalletPaymentPubKeyHash $ knownWallet 2
+
+
+-- slots
+import Ledger.TimeSlot
+import Data.Default
+slotToEndPOSIXTime def 5

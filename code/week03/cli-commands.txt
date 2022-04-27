@@ -1,0 +1,18 @@
+cardano-node run \
+ --topology testnet-topology.json \
+ --database-path db \
+ --socket-path node.socket \
+ --host-addr 127.0.0.1 \
+ --port 3001 \
+ --config testnet-config.json%
+
+cardano-cli address key-gen --verification-key-file 01.vkey --signing-key-file 01.skey
+cardano-cli address build --payment-verification-key-file 01.vkey --testnet-magic 1097911063 --out-file 01.addr
+
+cardano-cli query utxo --address $(cat 01.addr) --testnet-magic 1097911063
+
+cardano-cli address key-hash --payment-verification-key-file 02.vkey --out-file 02.pkh
+cardano-cli address build-script --script-file vesting.plutus --testnet-magic 1097911063 --out-file vesting.addr
+cardano-cli query protocol-parameters --testnet-magic 1097911063 --out-file protocol.json
+
+cardano-cli query tip --testnet-magic 1097911063 # current slot
