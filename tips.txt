@@ -7,3 +7,7 @@ mockWalletPaymentPubKeyHash $ knownWallet 2
 import Ledger.TimeSlot
 import Data.Default
 slotToEndPOSIXTime def 5
+
+
+-- testnet
+

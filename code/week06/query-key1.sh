@@ -2,5 +2,5 @@
 
 cardano-cli query utxo \
    $MAGIC \
-   --address $(cat testnet/01.addr)
+   --address $(cat ../../testnet/01.addr)
 

@@ -1,5 +1,5 @@
 dbConfig:
-    dbConfigFile: testnet/plutus-pab.db
+    dbConfigFile: ../../cardano-node/plutus-pab.db
     dbConfigPoolSize: 20
 
 pabWebserverConfig:
@@ -17,7 +17,7 @@ walletServerConfig:
     baseUrl: http://localhost:8090
 
 nodeServerConfig:
-  pscSocketPath: testnet/node.sock
+  pscSocketPath: ../../cardano-node/node.socket
   pscBaseUrl: "localhost"
   pscKeptBlocks: 2160
   pscNetworkId: "1097911063" # Testnet network ID (main net = empty string)
@@ -46,6 +46,6 @@ developmentOptions:
   pabResumeFrom:
     # "tag" : "PointAtGenesis" }
       { "tag" : "Point"
-      , "pointBlockId" : "b986b7fd42c6587030ff8af2b6867fcecf138eb6b08bd14989930573125f14d0"
-      , "pointSlot" : {"getSlot" : 51463348}
+      , "pointBlockId" : "3a856ffefa44484005f374c021956e9984934234e6a7f445fe9d59ff10508f19"
+      , "pointSlot" : {"getSlot" : 58445661}
       }

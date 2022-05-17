@@ -1,0 +1,4 @@
+/cardano-node/db
+*.db
+*.db-shm
+*.db-wal

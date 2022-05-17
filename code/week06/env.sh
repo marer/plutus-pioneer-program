@@ -3,4 +3,4 @@
 export CARDANO_NODE_SOCKET_PATH=testnet/node.sock
 export MAGIC='--testnet-magic 1097911063'
 export ADDRESS=addr_test1qzj356wpdmhdchvmc355xx6wel7cqvepyrlam84aygkvx9d04w7v8cu4fshxvv5ukfw05nyzh07zy427mf2eqkcd27aqax2r7e
-export WALLETID=7cc75497535877261173ab585f5abb431f7ba484
+export WALLETID=142d15614a2d4124bef7d3ca604e05def27f284e

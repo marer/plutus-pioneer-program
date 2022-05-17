@@ -5,8 +5,8 @@
   },
   "cicPort": 9083,
   "cicSecurityParam": 2160,
-  "cicSocketPath": "testnet/node.sock",
-  "cicDbPath": "testnet/chain-index.db",
+  "cicSocketPath": "/home/marek/workspace/plutus-pioneer-program/cardano-node/node.socket",
+  "cicDbPath": "/home/marek/workspace/plutus-pioneer-program/cardano-node/chain-index.db",
   "cicNetworkId": {
     "contents": {
       "unNetworkMagic": 1097911063

@@ -1,0 +1,9 @@
+./start-testnet-wallet.sh
+
+cabal exec -- plutus-chain-index --config ../../plutus-pioneer-program/code/week06/testnet/chain-index-config.json start-index
+lub
+nix-shell deployment-nix
+plutus-chain-index --config testnet/chain-index-config.json start-index
+
+
+./start-testnet-pab.sh
