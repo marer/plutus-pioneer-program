@@ -9,5 +9,5 @@ import Data.Default
 slotToEndPOSIXTime def 5
 
 
--- testnet
+cabal repl plutus-pioneer-program-week08.cabal:test:plutus-pioneer-program-week08-tests
 
